@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: monospace 'sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background: #fefefe;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header .logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header .logo a{
+    color: #fff;
+}
+
+.bar{
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius:50px;
+    transition:0.2s;
+    margin: 0 5px;
+}
+
+.navbar ul li a:hover{
+    color: #11101b;
+    background-color: #fefefe;
+}
+
+.home{
+    padding-top: 100px;
+    justify-content:space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+
+.home .image{
+    width: 45%;
+}
+
+.home .image img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.home .content{
+    width: 45%;
+}
+
+.home .content h3{
+    font-size: 40px;
+    color: #444;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.home .content p{
+    font-size: 30px;
+    color: #111;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.btn{
+    background-color: #111;
+    padding: 10px 14px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+section{
+    padding:25px 6%;
+}
+
+section:nth-child(even){
+    background: #fefefe;
+}
+
+.movie{
+    min-height: 90vh;
+    padding-bottom: 20px;
+}
+
+.movie .movieData{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie .title{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-decoration: underline 2px solid red;
+}
+
+.movie .movieCard{
+  width: 350px;
+  height: 380px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.movie .movieCard img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.movie .movieCard h5{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: red;
+}
+
+.movie .movieCard .rating{
+    padding-top: 20px;
+    color: red;
+}
+
+.bolly{
+    min-height: 90vh;
+    padding-bottom: 20px;
+
+}
+
+.bolly .bollyData{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bolly .title{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-decoration: underline 2px solid red;
+}
+
+.bolly .bollyCard{
+  width: 350px;
+  height: 380px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.bolly .bollyCard img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.bolly .bollyCard h5{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: red;
+}
+
+.bolly .bollyCard .rating{
+    padding-top: 20px;
+    color: red;
+}
+
+
+.review{
+    min-height: 90vh;
+    padding-bottom: 20px;
+
+}
+
+.review .reviewData{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review .title{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-decoration: underline 2px solid red;
+}
+
+.review .reviewCard{
+  width: 350px;
+  height: 380px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.review .reviewCard img{
+    width: 70%;
+    border-radius: 5px;
+}
+
+.review .reviewCard h5{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 0;
+    color: red;
+}
+
+.review .reviewCard p{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.review .reviewCard .rating{
+    padding-top: 10px;
+    color: red;
+}
+
+.feedback{
+    min-height: 90vh;
+    padding-bottom: 20px;
+}
+
+.feedback .feedbackData{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.feedback .feedbackData .image{
+    width: 45%;
+}
+
+.feedback .feedbackData .rateForm{
+    width: 45%;
+}
+
+.feedback .feedbackData .image img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.feedback .feedbackData .rateForm input{
+    width: 550px;
+    height: 40px;
+    margin: 10px;
+}
+
+.feedback .feedbackData .rateForm input::placeholder{
+  color: red;
+}
+
+.feedback .feedbackData .rateForm textarea{
+    width: 550px;
+    height: 90px;
+    margin: 20px 0 15px 10px;
+}
+
+.feedback .feedbackData .rateForm textarea::placeholder{
+    color: red;
+}
+
+.feedback .feedbackData .rateForm .btn{
+    margin: 0 0 20px 10px;
+}
+
+.feedback .title{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-decoration: underline 2px solid red;
+}
+
+
+
+
+
+@media only screen and (max-width:1300px) {
+    header{
+        padding: 0 50px;
+    }
+
+    .movie .movieData .movieCard{
+        margin-bottom: 40px;
+    }
+
+    .bolly .bollyData .bollyCard{
+        margin-bottom: 40px;
+    }
+
+    .review .reviewData .reviewCard{
+        margin-bottom: 40px;
+    }
+
+    .feedback .feedbackData .image{
+        width: 55%;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .feedback .feedbackData .rateForm{
+        width: 35%;
+      }
+
+    .feedback .feedbackData .rateForm input{
+        width: 350px;
+        height: 30px;
+    }
+
+    .feedback .feedbackData .rateForm textarea{
+        width: 350px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    header{
+        padding: 0 30px;
+    }
+    .home .image{
+        width: 55%;
+       }
+       .home .image img{
+        width: 100%;
+       }
+
+       .home .content{
+        width: 40%;
+        text-align: center;
+       }
+
+       .home .content h3{
+        font-size: 28px;
+        padding-bottom: 10px;
+       }
+    
+       .home .content p{
+        font-size: 24px;
+        
+       }
+
+      .movie .movieData .movieCard{
+        margin-bottom: 40px;
+      }
+
+      .bolly .bollyData .bollyCard{
+        margin-bottom: 40px;
+       }
+
+       .review .reviewData .reviewCard{
+        margin-bottom: 40px;
+       }
+
+       .feedback .feedbackData .image{
+        width: 55%;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .feedback .feedbackData .rateForm{
+        width: 35%;
+      }
+
+    .feedback .feedbackData .rateForm input{
+        width: 300px;
+        height: 30px;
+    }
+
+    .feedback .feedbackData .rateForm textarea{
+        width: 300px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .bar{
+        display: block;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .navbar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .navbar.active{
+        height: 450px;
+    }
+    .navbar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .navbar.active ul{
+        opacity: 1;
+    }
+
+    .navbar ul li a{
+        margin-bottom: 12px;
+    }  
+
+    .home .image{
+        width: 100%;
+       }
+       .home .image img{
+        width: 100%;
+       }
+   
+       .home .content{
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+       }
+
+       .home .content h3{
+        padding-bottom: 5px;
+       }
+
+       .movie .movieData .movieCard{
+        margin-bottom: 40px;
+       }
+
+       .bolly .bollyData .bollyCard{
+        margin-bottom: 40px;
+       }
+
+       .review .reviewData .reviewCard{
+        margin-bottom: 40px;
+       }
+
+      .feedback .feedbackData .image{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .feedback .feedbackData .rateForm{
+        width: 100%;
+      }
+
+    .feedback .feedbackData .rateForm input{
+        width: 650px;
+    }
+
+    .feedback .feedbackData .rateForm textarea{
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .feedback .feedbackData .rateForm input{
+        width: 600px;
+    }
+
+    .feedback .feedbackData .rateForm textarea{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .feedback .feedbackData .rateForm input{
+        width: 450px;
+    }
+
+    .feedback .feedbackData .rateForm textarea{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .feedback .feedbackData .rateForm input{
+        width: 400px;
+    }
+
+    .feedback .feedbackData .rateForm textarea{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .feedback .feedbackData .rateForm input{
+        width: 300px;
+    }
+
+    .feedback .feedbackData .rateForm textarea{
+        width: 300px;
+    }
+}
+
+
